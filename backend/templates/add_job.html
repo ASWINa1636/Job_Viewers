@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Job</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #f0f9ff; /* Light blue background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    
+    .container {
+        max-width: 500px;
+        width: 100%;
+        padding: 45px;
+        padding-left: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        text-align: center; /* Center the text inside */
+    }
+    
+    h1 {
+        color: #0056b3;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    textarea {
+        height: 100px;
+        resize: none;
+    }
+    
+    button {
+        width: 105%;
+        padding: 12px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+    
+    button:hover {
+        background: #0056b3;
+    }
+    
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Add a Job</h2>
+        <form method="POST">
+            <input type="text" name="title" placeholder="Job Title" required><br>
+            <input type="text" name="company" placeholder="Company Name" required><br>
+            <input type="text" name="location" placeholder="Location" required><br>
+            <textarea name="description" placeholder="Job Description" required></textarea><br>
+            <input type="text" name="required_skills" placeholder="Required Skills (comma-separated)" required><br>
+            <input type="text" name="salary" placeholder="Salary" required><br>
+            <button type="submit">Post Job</button>
+        </form>
+        
+</body>
+</html>
