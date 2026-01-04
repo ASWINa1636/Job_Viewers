@@ -1,10 +1,10 @@
--->-Job Viewers
+###Job Viewers
 
-->Overview
+##Overview
 
 Job Viewers is a web-based application that allows users to upload their resumes, extract relevant information, and get job recommendations based on their skills. The platform also includes a job posting system and user authentication.
 
--->Features
+##Features
 
 Resume Upload & Parsing: Supports PDF, DOCX, and images with OCR.
 
@@ -14,7 +14,7 @@ User Authentication: Signup, login, and logout system.
 
 Database: SQLite for job-related data and user authentication.
 
--->Tech Stack
+##Tech Stack
 
 Backend: Flask (Python)
 
@@ -26,7 +26,7 @@ NLP: spaCy, PhraseMatcher
 
 File Processing: PyMuPDF, python-docx, Tesseract OCR
 
--->Usage
+##Usage
 
 Upload your resume to get skill-based job recommendations.
 
@@ -36,7 +36,7 @@ Post job listings if you're an employer.
 
 Sign up & log in for job posts.
 
--->Contributing
+##Contributing
 
 Feel free to submit pull requests or open issues if you find bugs or have feature requests.
 
